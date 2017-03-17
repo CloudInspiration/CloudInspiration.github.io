@@ -1,0 +1,512 @@
+/** Подключения **/
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic');
+/** Глобальные стили **/
+html {
+	font-size: 10px;
+}
+body {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 16px;
+	font-size: 1.6rem;
+	color: #444;
+	min-width: 960px;
+}
+* {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	outline: none;
+}
+a {
+	color: #dd8bbb;
+	text-decoration: none
+}
+a:hover{
+	text-decoration: underline;
+}
+img {
+	max-width: 100%;
+}
+input, select, textarea, button {
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+}
+/** Основные модули **/
+.b-container {
+	width: 960px;
+	margin: 0 auto;
+	clear: both;
+	position: relative;
+}
+.b-clearfix {
+	clear: both;
+}
+.b-blue {
+	color: #009aff;
+}
+/** **/
+.b-header {
+	background: url(http://myuborka24.ru/templates/hot_cleaning/images/water_bg2.png);
+	clear: both;
+	padding: 10px 0;
+}
+	.b-header__container {
+		clear: both;
+		padding: 0 19px 0 20px;
+	}
+		.b-logotype {
+			display: block;
+			width: 40%;
+			float: left
+		}
+		.b-logotype:hover{
+	text-decoration: none;
+}
+			.b-logotype__image {
+				display: inline-block;
+			}
+		.b-order {
+			width: 30%;
+			float: left;
+			padding: 11px 0 0 0;
+		}
+			.b-order__item {
+				clear: both;
+				color: #666
+			}
+			.b-order__item:hover{}
+			.b-order__item:hover .b-order__item-title{
+	text-decoration: underline;
+}
+				.b-order__item-icon {
+					float: left;
+					width: 5%;
+					text-align: center;
+				}
+				.b-order__item-title {
+					float: right;
+					width: 93%;
+				}
+		.b-contact {
+			width: 30%;
+			float: right;
+			padding: 10px 0 0 0;
+		}
+			.b-contact__phone {
+				display: block;
+				float: right;
+				clear: both;
+				color: #009aff;
+				font-size: 25px;
+				font-size: 2.5rem;
+				font-weight: bold;
+				text-decoration: underline
+			}
+			.b-contact__phone:hover{
+	text-decoration: none;
+}
+			.b-contact__description {
+				clear: both;
+				float: right;
+				text-align: right;
+				font-size: 14px;
+				font-size: 1.4rem;
+				color: #888;
+			}
+/** **/
+.b-menu {
+	background: #fff;
+	-webkit-box-shadow: 0 0 3px rgba(80, 80, 80, .5);
+	        box-shadow: 0 0 3px rgba(80, 80, 80, .5);
+	z-index: 1;
+	position: relative;
+	clear: both;
+}
+	.b-menu__item {
+		float: left;
+		display: block;
+		padding: 15px 30px;
+		color: #666;
+		-webkit-transition: all ease .3s;
+		transition: all ease .3s
+	}
+	.b-menu__item:hover{
+	background: #eee;
+	cursor: pointer;
+	text-decoration: none;
+}
+	.b-menu__item:hover .b-menu__item-container{
+	visibility: visible;
+	opacity: 1;
+}
+	.b-menu__item_active{
+	background: #eee;
+}
+		.b-menu__item-title {}
+		.b-menu__item-container {
+			clear: both;
+			background: #fff;
+			position: absolute;
+			left: 0;
+			width: 100%;
+			margin: 15px 0 0 0;
+			-webkit-box-shadow: 0 0 3px rgba(80, 80, 80, .5);
+			        box-shadow: 0 0 3px rgba(80, 80, 80, .5);
+			padding: 20px;
+			opacity: 0;
+			visibility: hidden;
+			-webkit-transition: all ease .3s;
+			transition: all ease .3s;
+		}
+			.b-menu__item-child {
+				float: left;
+				width: 25%;
+			}
+				.b-menu__item-child-title {
+					font-weight: bold;
+					margin: 0 0 5px 0;
+				}
+				.b-menu__item-child-list {
+					clear: both;
+				}
+					.b-menu__item-child-link {
+						display: block;
+						float: left;
+						clear: both;
+						color: #666;
+					}
+/** **/
+.b-service {
+	background: url(https://cleanbros.ru/web/images/bg.png);
+	clear: both;
+	padding: 30px 0 40px 0;
+}
+	.b-service__title {
+		font-weight: bold;
+		text-align: center;
+		font-size: 30px;
+		font-size: 3rem;
+		margin: 0 0 10px 0;
+	}
+	.b-service__container {
+		clear: both;
+	}
+		.b-service__item {
+			float: left;
+			width: 33.3%;
+			margin: 20px 0 0 0;
+		}
+			.b-service__item-overlay {
+				clear: both;
+				position: relative;
+				display: block;
+				height: 285px;
+				overflow: hidden
+			}
+			.b-service__item-overlay:hover{}
+			.b-service__item-overlay:hover .b-service__item-image{
+	filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /></filter></svg>#filter');
+	-webkit-filter: grayscale(100%);
+	        filter: grayscale(100%);
+}
+				.b-service__item-logotype {
+					clear: both;
+					text-align: center;
+				}
+					.b-service__item-image {
+						-webkit-transition: all ease .3s;
+						transition: all ease .3s;
+					}
+				.b-service__item-description {
+					position: absolute;
+					top: 20px;
+					left: 8px;
+				}
+					.b-service__item-title {
+						background: #20a052;
+						color: #fff;
+						font-weight: bold;
+						padding: 10px 20px 10px 15px;
+						-webkit-border-radius: 0 25px 25px 0;
+						        border-radius: 0 25px 25px 0
+					}
+					.b-service__item-title:after{
+	content: '';
+	left: 0;
+	border-style: solid;
+	border-width: 0 10px 8px 0;
+	border-color: transparent #0b632d transparent transparent;
+	bottom: -8px;
+	position: absolute;
+}
+				/**
+				.b-service__item-more {
+					position: absolute;
+					bottom: 0;
+					width: 100%;
+					text-align: center;
+					background: #20a052;
+					color: #fff;
+					font-weight: bold;
+					padding: 10px;
+				}
+				**/
+/** **/
+.b-why {
+	clear: both;
+	background: url(http://myuborka24.ru/templates/hot_cleaning/images/water_bg2.png);
+	-webkit-box-shadow: inset 0 2px 5px rgba(180, 180, 180, .5);
+	        box-shadow: inset 0 2px 5px rgba(180, 180, 180, .5);
+	padding: 30px 0;
+}
+	.b-promo {
+		clear: both;
+		margin: 0 0 20px 0;
+	}
+		.b-promo__title {
+			text-align: center;
+			font-weight: bold;
+			font-size: 30px;
+			font-size: 3rem;
+			margin: 0 0 20px 0;
+		}
+		.b-promo__container {
+			clear: both;
+			padding: 20px 0;
+		}
+			.b-promo__item {
+				float: left;
+				width: 25%;
+				text-align: center;
+			}
+				.b-promo__icon {
+					clear: both;
+					margin: 0 0 10px 0;
+					height: 90px;
+				}
+					.b-promo__image {
+						clear: both;
+					}
+				.b-promo__item-title {
+					clear: both;
+					font-weight: bold;
+					margin: 0 0 5px 0;
+				}
+				.b-promo__item-description {
+					clear: both;
+					font-size: 14px;
+					font-size: 1.4rem;
+				}
+	.b-calculator {
+		clear: both;
+	}
+		.b-calculator__title {
+			text-align: center;
+			font-weight: bold;
+		}
+		.b-calculator__clip {
+			text-align: center;
+			padding: 20px 0;
+		}
+			.b-calculator__button {
+				display: inline-block;
+				background: #ffbb00;
+				border: 1px solid #eea236;
+				-webkit-box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, .6), 0 1px 1px 0 rgba(0, 0, 0, .3);
+				        box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, .6), 0 1px 1px 0 rgba(0, 0, 0, .3);
+				padding: 10px 40px;
+				-webkit-border-radius: 3px;
+				        border-radius: 3px;
+				cursor: pointer;
+				font-weight: bold;
+				-webkit-transition: all ease .3s;
+				transition: all ease .3s;
+				color: #444;
+			}
+		.b-calculator__description {
+			clear: both;
+			text-align: center;
+			font-size: 14px;
+			font-size: 1.4rem;
+		}
+/** **/
+.b-static {
+	background: url(https://cleanbros.ru/web/images/bg.png);
+	-webkit-box-shadow: inset 0 2px 5px rgba(180, 180, 180, .5);
+	        box-shadow: inset 0 2px 5px rgba(180, 180, 180, .5);
+	clear: both;
+	padding: 30px 0
+}
+.b-static--default{
+	background: none;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+	min-height: 700px;
+}
+	.b-static__title {
+		clear: both;
+		font-weight: bold;
+		font-size: 20px;
+		font-size: 2rem;
+		text-align: center;
+		margin: 0 0 20px 0;
+	}
+	.b-static__container {
+		clear: both;
+		text-align: center;
+	}
+/** **/
+.b-fullstory {
+	clear: both;
+	padding: 30px 0;
+	min-height: 700px;
+}
+	.b-fullstory__title {
+		clear: both;
+		font-weight: bold;
+		font-size: 20px;
+		font-size: 2rem;
+		text-align: center;
+		margin: 0 0 20px 0;
+	}
+	.b-fullstory__tabs {
+		clear: both;
+		padding: 20px 0;
+		margin: 0 0 20px 0;
+	}
+		.b-fullstory__tab-item {
+			float: left;
+			width: 50%;
+			text-align: center;
+			border: 1px solid #ddd;
+			padding: 10px;
+			font-weight: bold;
+			cursor: pointer
+		}
+		.b-fullstory__tab-item_active{
+	background: #20a052;
+	color: #fff;
+	border-color: #20a052;
+	text-decoration: underline;
+}
+		.b-fullstory__tab-item:hover{
+	text-decoration: underline;
+}
+	.b-fullstory__container {
+		clear: both;
+		padding: 20px;
+		border: 1px solid #ddd;
+	}
+		.b-fullstory__image {
+			width: 25%;
+			float: left;
+		}
+			.b-fullstory__image-thumb {
+				display: block;
+				clear: both;
+				border: 1px solid #ddd;
+				padding: 1px;
+			}
+		.b-fullstory__description {
+			width: 73%;
+			float: right;
+		}
+	.b-fullstory__table {
+		clear: both;
+		padding: 40px 0;
+	}
+		.b-fullstory__table-title {
+			clear: both;
+			font-weight: bold;
+			font-size: 20px;
+			font-size: 2rem;
+			text-align: center;
+			margin: 0 0 40px 0;
+		}
+		.b-fullstory__table-list {
+			clear: both
+		}
+		.b-fullstory__table-list table{
+	width: 100%;
+	text-align: center;
+	border-collapse: collapse;
+}
+		.b-fullstory__table-list table th{
+	padding: 20px 10px;
+	background: #20a052;
+	color: #fff;
+}
+		.b-fullstory__table-list table td{
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-top: none;
+}
+/** **/
+.b-footer {
+	clear: both;
+	padding: 30px 0 0 0;
+	-webkit-box-shadow: inset 0 2px 5px rgba(180, 180, 180, .5);
+	        box-shadow: inset 0 2px 5px rgba(180, 180, 180, .5);
+}
+	.b-footer__menu {
+		float: left;
+		width: 70%;
+	}
+		.b-footer__menu-block {
+			float: left;
+			width: 33.3%;
+		}
+			.b-footer__menu-block-title {
+				clear: both;
+				font-weight: bold;
+				margin: 0 0 10px 0;
+			}
+			.b-footer__menu-block-container {
+				clear: both;
+			}
+				.b-footer__menu-item {
+					display: block;
+					clear: both;
+					float: left;
+					color: #444;
+					font-size: 14px;
+					font-size: 1.4rem;
+				}
+	.b-footer__copyright {
+		float: right;
+		width: 30%;
+	}
+		.b-footer__copyright-top {
+			clear: both;
+			margin: 0 0 14px 0;
+		}
+			.b-footer__logotype {
+				display: block;
+				float: left;
+				width: 40%;
+			}
+			.b-footer__copyright-contacts {
+				float: right;
+				width: 54%;
+			}
+				.b-footer__link {
+					display: block;
+					float: left;
+					clear: both;
+					font-weight: bold;
+					color: #444
+				}
+				.b-footer__link--blue{
+	color: #009aff;
+}
+		.b-footer__copyright-bottom {
+			clear: both;
+			font-size: 14px;
+			font-size: 1.4rem;
+		}
+	.b-footer__description {
+		padding: 20px 0;
+		font-size: 14px;
+		font-size: 1.4rem;
+		color: #888;
+	}
