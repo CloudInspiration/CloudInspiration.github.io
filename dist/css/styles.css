@@ -357,6 +357,7 @@ input, select, textarea, button {
 	}
 /** **/
 .b-fullstory {
+	background: url(http://myuborka24.ru/templates/hot_cleaning/images/water_bg2.png);
 	clear: both;
 	padding: 30px 0;
 	min-height: 700px;
@@ -370,6 +371,7 @@ input, select, textarea, button {
 		margin: 0 0 20px 0;
 	}
 	.b-fullstory__tabs {
+		background: #fff;
 		clear: both;
 		padding: 20px 0;
 		margin: 0 0 20px 0;
@@ -393,6 +395,7 @@ input, select, textarea, button {
 	text-decoration: underline;
 }
 	.b-fullstory__container {
+		background: #fff;
 		clear: both;
 		padding: 20px;
 		border: 1px solid #ddd;
@@ -437,6 +440,7 @@ input, select, textarea, button {
 	color: #fff;
 }
 		.b-fullstory__table-list table td{
+	background: #fff;
 	padding: 10px;
 	border: 1px solid #ddd;
 	border-top: none;
