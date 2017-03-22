@@ -1,0 +1,250 @@
+/** Подключения **/
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic');
+/** Глобальные стили **/
+html {
+	font-size: 10px;
+}
+body {
+	background: #fafafa;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 14px;
+	font-size: 1.4rem;
+	color: #666;
+	min-width: 1070px;
+}
+* {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	outline: none;
+}
+a {
+	color: #dd8bbb;
+	text-decoration: none
+}
+a:hover{
+	text-decoration: underline;
+}
+img {
+	max-width: 100%;
+}
+input, select, textarea, button {
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+}
+.g-left {
+	text-align: left;
+}
+.g-right {
+	text-align: right;
+}
+.g-center {
+	text-align: center;
+}
+/** Основные модули **/
+.b-container {
+	background: #fff;
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+	        box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+	width: 1070px;
+	margin: 0 auto;
+	clear: both;
+}
+.b-clearfix {
+	clear: both;
+}
+/** **/
+.b-menu {
+	background: #3296bf;
+	clear: both;
+}
+	.b-menu__item {
+		color: #fff;
+		float: left;
+		padding: 10px 20px;
+		display: block
+	}
+	.b-menu__item_active{
+	background: #2b84a9;
+}
+/** **/
+.b-header {
+	clear: both;
+	padding: 30px 20px 10px 20px;
+	border-bottom: 1px dashed #eee;
+}
+	.b-logotype {
+		display: block;
+		width: 30%;
+		float: left;
+	}
+	.b-search {
+		width: 50%;
+		float: right;
+		padding: 5px 0 0 0;
+	}
+		.b-search__input {
+			width: 70%;
+			float: left;
+			background: none;
+			border: 1px solid #ddd;
+			-webkit-border-radius: 10px 0 0 10px;
+			        border-radius: 10px 0 0 10px;
+			padding: 5px 10px 5px 15px;
+			border-right: none;
+		}
+		.b-search__button {
+			width: 30%;
+			background: #5eab62;
+			padding: 6px 10px;
+			-webkit-border-radius: 0 10px 10px 0;
+			        border-radius: 0 10px 10px 0;
+			cursor: pointer;
+			border: none;
+			color: #fff;
+			float: right;
+		}
+/** **/
+.b-static {
+	clear: both;
+	margin: 0 0 20px 0;
+	padding: 20px;
+	border-bottom: 1px dashed #eee;
+}
+	.b-static__title {
+		font-weight: bold;
+		font-size: 16px;
+		font-size: 1.6rem;
+		margin: 0 0 10px 0;
+	}
+	.b-static__description {
+		clear: both;
+	}
+/** **/
+.b-catalog {
+	clear: both;
+	padding: 0 20px 20px 20px;
+}
+	.b-catalog__wrap {
+		clear: both;
+		background: url('https://cashback.ru/img/landing1bg.png');
+	}
+		.b-catalog__header {
+			clear: both;
+			background: #fff;
+			border-bottom: 2px solid #5eab62;
+			padding: 0 20px 20px 0;
+		}
+			.b-catalog__header-block {
+				float: left
+			}
+			.b-catalog__header-block--title{
+	width: 30%;
+}
+			.b-catalog__header-block--description{
+	text-align: center;
+	width: 25%;
+}
+			.b-catalog__header-block--price{
+	text-align: center;
+	width: 15%;
+}
+			.b-catalog__header-block--count{
+	text-align: center;
+	width: 15%;
+}
+			.b-catalog__header-block--detail{
+	text-align: center;
+	width: 15%;
+}
+		.b-catalog__container {
+			clear: both;
+		}
+			.b-catalog__item {
+				background: #ffffff;
+				background: rgba(255, 255, 255, .7);
+				clear: both;
+				padding: 20px;
+				height: 120px;
+				border-bottom: 1px dashed #eee
+			}
+			.b-catalog__item:nth-child(even){
+	background: #fff;
+}
+				.b-catalog__item-block {
+					float: left;
+					overflow: hidden;
+					height: 80px
+				}
+				.b-catalog__item-block--numbery{
+	width: 8%;
+}
+				.b-catalog__item-block--title{
+	width: 22%;
+}
+				.b-catalog__item-block--description{
+	width: 25%;
+}
+				.b-catalog__item-block--price{
+	text-align: center;
+	width: 15%;
+}
+				.b-catalog__item-block--count{
+	text-align: center;
+	width: 15%;
+}
+				.b-catalog__item-block--detail{
+	text-align: center;
+	width: 15%;
+}
+					.b-catalog__item-inner {
+						width: 100%;
+						height: 100%;
+						display: table;
+					}
+						.b-catalog__item-center {
+							vertical-align: middle;
+							display: table-cell;
+						}
+							.b-catalog__item-logotype {
+								display: block;
+							}
+							.b-catalog__item-button {
+								display: block;
+								clear: both;
+								color: #fff;
+								-webkit-border-radius: 5px;
+								        border-radius: 5px;
+								padding: 7px 5px
+							}
+							.b-catalog__item-button--show{
+	background: #3296bf;
+	margin: 0 0 10px 0;
+}
+							.b-catalog__item-button--site{
+	background: #5eab62;
+}
+		.b-catalog__more {
+			clear: both;
+			background: #fff;
+			text-align: center;
+			padding: 40px 0 0 0;
+		}
+			.b-catalog__more-button {
+				background: #eee;
+				display: inline-block;
+				cursor: pointer;
+				padding: 10px 50px;
+				-webkit-border-radius: 25px;
+				        border-radius: 25px;
+			}
+.b-footer {
+	background: #fafafa;
+	clear: both;
+	text-align: center;
+	border-top: 1px dashed #eee;
+	font-size: 12px;
+	font-size: 1.2rem;
+	padding: 10px 20px;
+	margin: 20px 0 0 0;
+}
