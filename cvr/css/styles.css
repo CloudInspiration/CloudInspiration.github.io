@@ -79,8 +79,6 @@ input, select, textarea, button {
 	.b-section__entry {
 		background: #fff;
 		padding: 10px 0;
-		-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .1);
-		        box-shadow: 0 0 5px rgba(0, 0, 0, .1);
 	}
 /** **/
 .b-welcome {
