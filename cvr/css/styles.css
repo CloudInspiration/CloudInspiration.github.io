@@ -74,7 +74,7 @@ input, select, textarea, button {
 }
 /** **/
 .b-section {
-	padding: 50px 0;
+	padding: 100px 0;
 }
 	.b-section__entry {
 		background: #fff;
@@ -151,17 +151,17 @@ input, select, textarea, button {
 	.b-static__item {
 		float: left;
 		width: 33.3%;
+		text-align: center;
 	}
 		.b-static__item-title {
 			font-weight: bold;
-			margin: 0 0 20px 0;
-			width: 90%;
-			text-align: center;
+			margin: 0 0 10px 0;
+			width: 95%;
 			font-size: 18px;
 			font-size: 1.8rem;
 		}
 		.b-static__item-description {
-			width: 90%;
+			width: 95%;
 		}
 /** **/
 .b-footer {
