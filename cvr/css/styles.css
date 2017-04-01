@@ -138,6 +138,12 @@ input, select, textarea, button {
 					.b-shop__item-detail-num {
 						color: #27ae60;
 					}
+		.b-shop__item-show-more {
+			color: #666;
+			display: block;
+			text-align: center;
+			margin: 10px 0 0 0;
+		}
 /** **/
 .b-static {
 	padding: 0 15px;
